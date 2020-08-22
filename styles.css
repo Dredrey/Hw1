@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    animation-name: gradient;
+    animation-duration: 2000ms;
+    color: white;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    animation-name: gradient;
+    animation-duration: 2200ms;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+@keyframes gradient {
+    from {
+        color: black;
+        right: 1000px
+    }
+    to {
+        color: white;
+        right: 0px
+    }
+}
+
+.topGradient {
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(90deg, deeppink, #4400ff);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    animation-name: stretch1;
+    animation-duration: 3s;
+}
+.topGradient a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2px;
+    color: white;
+    text-decoration: none;
+}
+.topGradient a:hover {
+    background: #4400ff;
+    color: white;
+}
+
+@keyframes stretch1 {
+    from {
+        width: 0%;
+        left: -200px;
+    }
+    to {
+        width: 100%;
+        left: 0px;
+    }
+}
+
+.bottomGradient {
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(90deg, #4400ff, deeppink);
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    animation-name: stretch2;
+    animation-duration: 3s;
+}
+
+@keyframes stretch2 {
+    from {
+        width: 0%;
+        right: -200px;
+    }
+    to {
+        width: 100%;
+        right: 0px;
+    }
+}
+.navbar {
+
+}
+
+
+
